@@ -7,24 +7,22 @@
     --base02: #414868 !important;
     --base03: #565f89 !important;
     --base04: #c0caf5 !important;
-    --base05: #282e44 !important;
-    --base06: #1f2335 !important;
-    --base07: #f7768e !important;
-    --base08: #ff9e64 !important;
-    --base09: #e0af68 !important;
-    --base0A: #9ece6a !important;
-    --base0B: #2ac3de !important;
-    --base0C: #7aa2f7 !important;
+    --base05: #bb9af7 !important;
+    --base06: #c0caf5 !important;
+    --base07: #2ac3de !important;
+    --base08: #9ece6a !important;
+    --base09: #ff9e64 !important;
+    --base0A: #565f89 !important;
+    --base0C: #bb9af7 !important;
     --base0D: #bb9af7 !important;
-    --base0E: #b4f9f8 !important;
-
-    --selection:    #6f7bb630 !important;
-    --sel-match:    #6f7bb650 !important;
-    --highlight-bg: #292e427a !important;
-    --bracket-bg:   #3d59a150 !important;
-    --added-bg:     #3b4a3880 !important;
-    --removed-bg:   #4a393a80 !important;
-    --tooltip-bg:   #282e44 !important;
+    --base0E: #7aa2f7 !important;
+    --base0F: #ff9e64 !important;
+    --invalid: #c0caf5 !important;
+    --tooltip: #282e44 !important;
+    --hl-bg: #292e427a !important;
+    --sel: #6f7bb630 !important;
+    --added: #3b4a3880 !important;
+    --removed: #4a393a80 !important;
 }
 
 /* ── Base editor ─────────────────────────────────────────────────────────── */
@@ -49,13 +47,15 @@
 }
 
 /* ── Selection ───────────────────────────────────────────────────────────── */
-.cm-editor.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground,
+.cm-editor.cm-focused>.cm-scroller>.cm-selectionLayer .cm-selectionBackground,
 .cm-selectionBackground,
 .cm-content ::selection {
-    background-color: var(--selection) !important;
+    background-color: var(--sel) !important;
 }
 
-.cm-selectionLayer { z-index: 100 !important; }
+.cm-selectionLayer {
+    z-index: 100 !important;
+}
 
 /* ── Search ──────────────────────────────────────────────────────────────── */
 .cm-searchMatch {
@@ -81,20 +81,27 @@
     border-radius: 4px !important;
 }
 
-.cm-panels.cm-panels-top    { border-bottom: 1px solid var(--base03) !important; }
-.cm-panels.cm-panels-bottom { border-top:    1px solid var(--base03) !important; }
+.cm-panels.cm-panels-top {
+    border-bottom: 1px solid var(--base03) !important;
+}
+
+.cm-panels.cm-panels-bottom {
+    border-top: 1px solid var(--base03) !important;
+}
 
 .cm-panel button {
-    background-color: var(--tooltip-bg) !important;
+    background-color: var(--tooltip) !important;
     color: var(--base04) !important;
     border-radius: 3px !important;
 }
 
-.cm-panel button:hover { background-color: var(--base06) !important; }
+.cm-panel button:hover {
+    background-color: var(--base06) !important;
+}
 
 /* ── Active line ─────────────────────────────────────────────────────────── */
 .cm-activeLine {
-    background-color: var(--highlight-bg) !important;
+    background-color: var(--hl-bg) !important;
     border-radius: 2px !important;
     z-index: 1 !important;
 }
@@ -112,56 +119,93 @@
     font-weight: bold !important;
 }
 
-.cm-foldGutter .cm-gutterElement       { color: var(--base03) !important; cursor: pointer !important; }
-.cm-foldGutter .cm-gutterElement:hover { color: var(--base04) !important; }
+.cm-foldGutter .cm-gutterElement {
+    color: var(--base03) !important;
+    cursor: pointer !important;
+}
+
+.cm-foldGutter .cm-gutterElement:hover {
+    color: var(--base04) !important;
+}
 
 /* ── Diff / merge ────────────────────────────────────────────────────────── */
 .cm-insertedLine,
 ins.cm-insertedLine {
-    background-color: var(--added-bg) !important !important;
+    background-color: var(--added) !important;
     color: var(--base0A) !important;
     border: 1px solid #9ece6a40 !important;
     border-radius: 2px !important;
 }
 
-ins.cm-insertedLine .cm-changedText { background: transparent !important !important; }
+ins.cm-insertedLine .cm-changedText {
+    background: transparent !important;
+}
 
 .cm-deletedLine,
 del,
 del.cm-deletedLine {
-    background-color: var(--removed-bg) !important !important;
+    background-color: var(--removed) !important;
     color: var(--base07) !important;
     border: 1px solid #f7768e40 !important;
     border-radius: 2px !important;
 }
 
 del .cm-deletedText,
-del .cm-changedText { background: transparent !important !important; }
+del .cm-changedText {
+    background: transparent !important;
+}
 
 /* ── Tooltips / autocomplete ─────────────────────────────────────────────── */
 .cm-tooltip {
-    background-color: var(--tooltip-bg) !important;
+    background-color: var(--tooltip) !important;
     border: 1px solid var(--base03) !important;
     border-radius: 4px !important;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
-.cm-tooltip-autocomplete > ul                    { background-color: var(--tooltip-bg) !important; }
-.cm-tooltip-autocomplete > ul > li[aria-selected]{ background-color: var(--selection) !important; color: var(--tn-base04) !important; border-radius: 3px !important; }
-.cm-tooltip-autocomplete > ul > li > span.cm-completionIcon,
-.cm-tooltip-autocomplete > ul > li > span.cm-completionDetail { color: var(--base03) !important; }
-.cm-tooltip-autocomplete > ul > li > span.cm-completionDetail { font-style: italic !important; }
+.cm-tooltip-autocomplete>ul {
+    background-color: var(--tooltip) !important;
+}
+
+.cm-tooltip-autocomplete>ul>li[aria-selected] {
+    background-color: var(--sel) !important;
+    color: var(--base04) !important;
+    border-radius: 3px !important;
+}
+
+.cm-tooltip-autocomplete>ul>li>span.cm-completionIcon,
+.cm-tooltip-autocomplete>ul>li>span.cm-completionDetail {
+    color: var(--base03) !important;
+}
+
+.cm-tooltip-autocomplete>ul>li>span.cm-completionDetail {
+    font-style: italic !important;
+}
 
 /* ── Diagnostics ─────────────────────────────────────────────────────────── */
-.cm-diagnostic-error   { border-left: 3px solid var(--base07) !important; }
-.cm-diagnostic-warning { border-left: 3px solid var(--base08) !important; }
-.cm-diagnostic-info    { border-left: 3px solid var(--base0B) !important; }
-.cm-lintPoint-error    { border-bottom: 2px wavy var(--base07) !important; }
-.cm-lintPoint-warning  { border-bottom: 2px wavy var(--base08) !important; }
+.cm-diagnostic-error {
+    border-left: 3px solid var(--invalid) !important;
+}
+
+.cm-diagnostic-warning {
+    border-left: 3px solid var(--base07) !important;
+}
+
+.cm-diagnostic-info {
+    border-left: 3px solid var(--base0F) !important;
+}
+
+.cm-lintPoint-error {
+    border-bottom: 2px wavy var(--invalid) !important;
+}
+
+.cm-lintPoint-warning {
+    border-bottom: 2px wavy var(--base07) !important;
+}
 
 /* ── Brackets ────────────────────────────────────────────────────────────── */
 .cm-matchingBracket {
-    background-color: var(--bracket-bg) !important;
+    background-color: var(--hl-bg) !important;
     outline: 1px solid var(--base0C) !important;
     border-radius: 2px !important;
 }
@@ -173,14 +217,14 @@ del .cm-changedText { background: transparent !important !important; }
 }
 
 .cm-selectionMatch {
-    background-color: var(--sel-match) !important;
+    background-color: var(--sel) !important;
     outline: 1px solid #41486850 !important;
     border-radius: 2px !important;
 }
 
 /* ── Fold placeholder ────────────────────────────────────────────────────── */
 .cm-foldPlaceholder {
-    background-color: var(--tooltip-bg) !important;
+    background-color: var(--tooltip) !important;
     color: var(--base03) !important;
     border: 1px dotted #565f8970 !important;
     border-radius: 3px !important;
@@ -195,92 +239,206 @@ del .cm-changedText { background: transparent !important !important; }
 }
 
 /* ── Scrollbars ──────────────────────────────────────────────────────────── */
-.cm-scroller::-webkit-scrollbar       { width: 8px !important; height: 8px !important; }
-.cm-scroller::-webkit-scrollbar-track { background: var(--base06) !important; }
+.cm-scroller::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+.cm-scroller::-webkit-scrollbar-track {
+    background: var(--base06) !important;
+}
+
 .cm-scroller::-webkit-scrollbar-thumb {
     background-color: var(--base02) !important;
     border-radius: 4px !important;
     border: 3px solid var(--base06) !important;
 }
-.cm-scroller::-webkit-scrollbar-thumb:hover { background-color: var(--base03) !important; }
+
+.cm-scroller::-webkit-scrollbar-thumb:hover {
+    background-color: var(--base03) !important;
+}
 
 /* ── Ghost text ──────────────────────────────────────────────────────────── */
-.cm-ghostText { opacity: 0.5 !important; color: var(--base03) !important; }
+.cm-ghostText {
+    opacity: 0.5 !important;
+    color: var(--base0A) !important;
+}
 
 /* ── Syntax highlighting ─────────────────────────────────────────────────── */
 .cm-keyword,
 .cm-controlKeyword,
-.cm-moduleKeyword  { color: var(--base0D) !important; font-weight: bold !important; }
+.cm-moduleKeyword {
+    color: var(--base05) !important;
+    font-weight: bold !important;
+}
 
-.cm-variable       { color: var(--base04) !important; }
-.cm-variable-2     { color: var(--base04) !important; }
-.cm-property       { color: var(--base0C) !important; }
-.cm-name           { color: var(--base04) !important; }
+.cm-variable {
+    color: var(--base06) !important;
+}
 
-.cm-type           { color: var(--base0B) !important; }
-.cm-class          { color: var(--base09) !important; font-style: italic !important; }
-.cm-namespace      { color: var(--base0C) !important; font-style: italic !important; }
+.cm-variable-2 {
+    color: var(--base06) !important;
+}
 
-.cm-operator       { color: var(--base0D) !important; }
+.cm-property {
+    color: var(--base06) !important;
+}
+
+.cm-name {
+    color: var(--base06) !important;
+}
+
+.cm-type {
+    color: var(--base07) !important;
+}
+
+.cm-class {
+    color: var(--base07) !important;
+    font-style: italic !important;
+}
+
+.cm-namespace {
+    color: var(--base0E) !important;
+    font-style: italic !important;
+}
+
+.cm-operator {
+    color: var(--base0D) !important;
+}
+
 .cm-bracket,
 .cm-punctuation,
 .cm-squareBracket,
-.cm-angleBracket   { color: var(--base03) !important; }
-.cm-brace          { color: var(--base03) !important; }
+.cm-angleBracket {
+    color: var(--base0D) !important;
+}
 
-.cm-deffunc        { color: var(--base0C) !important; }
-.cm-label          { color: var(--base0C) !important; font-style: italic !important; }
+.cm-brace {
+    color: var(--base0D) !important;
+}
 
-.cm-number         { color: var(--base08) !important; }
+.cm-deffunc {
+    color: var(--base07) !important;
+}
+
+.cm-label {
+    color: var(--base07) !important;
+    font-style: italic !important;
+}
+
+.cm-number {
+    color: var(--base09) !important;
+}
+
 .cm-atom,
 .cm-bool,
-.cm-self           { color: var(--base08) !important; }
-.cm-modifier       { color: var(--base08) !important; font-style: italic !important; }
-.cm-constant       { color: var(--base0D) !important; }
+.cm-self {
+    color: var(--base09) !important;
+}
 
-.cm-string         { color: var(--base0A) !important; }
-.cm-regexp         { color: var(--base0E) !important; }
-.cm-inserted       { color: var(--base0A) !important; }
+.cm-modifier {
+    color: var(--base0F) !important;
+    font-style: italic !important;
+}
+
+.cm-constant {
+    color: var(--base09) !important;
+}
+
+.cm-string {
+    color: var(--base08) !important;
+}
+
+.cm-regexp {
+    color: var(--base08) !important;
+}
+
+.cm-inserted {
+    color: var(--base08) !important;
+}
 
 .cm-comment,
-.cm-docComment     { color: var(--base03) !important; font-style: italic !important; }
-.cm-meta           { color: var(--base03) !important; }
+.cm-docComment {
+    color: var(--base0A) !important;
+    font-style: italic !important;
+}
 
-.cm-tag            { color: var(--base0D) !important; }
-.cm-attribute      { color: var(--base09) !important; }
+.cm-meta {
+    color: var(--base0A) !important;
+}
 
-.cm-heading        { color: #89ddff !important; font-weight: bold !important; }
-.cm-heading1       { color: #89ddff !important; font-weight: bold !important; }
+.cm-tag {
+    color: var(--base0C) !important;
+}
+
+.cm-attribute {
+    color: var(--base0F) !important;
+}
+
+.cm-heading {
+    color: #89ddff !important;
+    font-weight: bold !important;
+}
+
+.cm-heading1 {
+    color: #89ddff !important;
+    font-weight: bold !important;
+}
+
 .cm-heading2,
 .cm-heading3,
 .cm-heading4,
 .cm-heading5,
-.cm-heading6       { color: #89ddff !important; }
+.cm-heading6 {
+    color: #89ddff !important;
+}
 
-.cm-strong         { color: var(--base04) !important; font-weight: bold !important; }
-.cm-emphasis       { color: var(--base0B) !important; font-style: italic !important; }
+.cm-strong {
+    color: var(--base09) !important;
+    font-weight: bold !important;
+}
+
+.cm-emphasis {
+    color: var(--base0E) !important;
+    font-style: italic !important;
+}
 
 .cm-link {
-    color: var(--base0D) !important;
+    color: var(--base0F) !important;
     font-weight: 500 !important;
     text-decoration: underline !important;
     text-underline-position: under !important;
 }
 
 .cm-url {
-    color: var(--base0B) !important;
+    color: var(--base0E) !important;
     text-decoration: underline !important;
     text-underline-offset: 2px !important;
 }
 
 .cm-invalid {
-    color: var(--base04) !important;
+    color: var(--invalid) !important;
     text-decoration: underline wavy !important;
     border-bottom: 1px wavy var(--base07) !important;
 }
 
-.cm-strikethrough  { color: var(--base07) !important; text-decoration: line-through !important; }
-.cm-deleted        { color: var(--base07) !important; }
-.cm-quote          { color: var(--base03) !important; }
-.cm-monospace      { color: var(--base04) !important; }
-.cm-contentSeparator { color: var(--base0C) !important; }
+.cm-strikethrough {
+    color: var(--invalid) !important;
+    text-decoration: line-through !important;
+}
+
+.cm-deleted {
+    color: var(--invalid) !important;
+}
+
+.cm-quote {
+    color: var(--base0A) !important;
+}
+
+.cm-monospace {
+    color: var(--base06) !important;
+}
+
+.cm-contentSeparator {
+    color: var(--base0E) !important;
+}
