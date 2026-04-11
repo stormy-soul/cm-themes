@@ -212,12 +212,13 @@ del .cm-changedText { background: transparent !important !important; }
 .cm-controlKeyword,
 .cm-moduleKeyword  { color: var(--tn-base0D) !important; font-weight: bold !important; }
 
-.cm-variableName   { color: var(--tn-base04) !important; }
-.cm-propertyName   { color: var(--tn-base0C) !important; }
+.cm-variable       { color: var(--tn-base04) !important; }
+.cm-variable-2     { color: var(--tn-base04) !important; }
+.cm-property       { color: var(--tn-base0C) !important; }
 .cm-name           { color: var(--tn-base04) !important; }
 
-.cm-typeName       { color: var(--tn-base0B) !important; }
-.cm-className      { color: var(--tn-base09) !important; font-style: italic !important; }
+.cm-type           { color: var(--tn-base0B) !important; }
+.cm-class          { color: var(--tn-base09) !important; font-style: italic !important; }
 .cm-namespace      { color: var(--tn-base0C) !important; font-style: italic !important; }
 
 .cm-operator       { color: var(--tn-base0D) !important; }
@@ -227,8 +228,8 @@ del .cm-changedText { background: transparent !important !important; }
 .cm-angleBracket   { color: var(--tn-base03) !important; }
 .cm-brace          { color: var(--tn-base03) !important; }
 
-.cm-function       { color: var(--tn-base0C) !important; }
-.cm-labelName      { color: var(--tn-base0C) !important; font-style: italic !important; }
+.cm-deffunc        { color: var(--tn-base0C) !important; }
+.cm-label          { color: var(--tn-base0C) !important; font-style: italic !important; }
 
 .cm-number         { color: var(--tn-base08) !important; }
 .cm-atom,
@@ -245,8 +246,8 @@ del .cm-changedText { background: transparent !important !important; }
 .cm-docComment     { color: var(--tn-base03) !important; font-style: italic !important; }
 .cm-meta           { color: var(--tn-base03) !important; }
 
-.cm-tagName        { color: var(--tn-base0D) !important; }
-.cm-attributeName  { color: var(--tn-base09) !important; }
+.cm-tag            { color: var(--tn-base0D) !important; }
+.cm-attribute      { color: var(--tn-base09) !important; }
 
 .cm-heading        { color: #89ddff !important; font-weight: bold !important; }
 .cm-heading1       { color: #89ddff !important; font-weight: bold !important; }

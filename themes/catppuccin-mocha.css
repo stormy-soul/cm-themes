@@ -216,12 +216,13 @@ del .cm-changedText { background: transparent !important !important; }
 .cm-controlKeyword,
 .cm-moduleKeyword  { color: var(--cp-mauve) !important; font-weight: bold !important; }
 
-.cm-variableName   { color: var(--cp-base04) !important; }
-.cm-propertyName   { color: var(--cp-blue) !important; }
+.cm-variable       { color: var(--cp-base04) !important; }
+.cm-variable-2     { color: var(--cp-base04) !important; }
+.cm-property       { color: var(--cp-blue) !important; }
 .cm-name           { color: var(--cp-base04) !important; }
 
-.cm-typeName       { color: var(--cp-yellow) !important; }
-.cm-className      { color: var(--cp-yellow) !important; font-style: italic !important; }
+.cm-type           { color: var(--cp-yellow) !important; }
+.cm-class          { color: var(--cp-yellow) !important; font-style: italic !important; }
 .cm-namespace      { color: var(--cp-peach) !important;  font-style: italic !important; }
 
 .cm-operator       { color: var(--cp-sky) !important; }
@@ -231,8 +232,8 @@ del .cm-changedText { background: transparent !important !important; }
 .cm-brace          { color: var(--cp-teal) !important; }
 .cm-angleBracket   { color: var(--cp-sky) !important; }
 
-.cm-function       { color: var(--cp-blue) !important; }
-.cm-labelName      { color: var(--cp-blue) !important; }
+.cm-deffunc        { color: var(--cp-blue) !important; }
+.cm-label          { color: var(--cp-blue) !important; }
 
 .cm-number         { color: var(--cp-peach) !important; }
 .cm-atom,
@@ -249,8 +250,8 @@ del .cm-changedText { background: transparent !important !important; }
 .cm-docComment     { color: var(--cp-base02) !important; font-style: italic !important; }
 .cm-meta           { color: var(--cp-base02) !important; }
 
-.cm-tagName        { color: var(--cp-pink) !important; }
-.cm-attributeName  { color: var(--cp-yellow) !important; }
+.cm-tag            { color: var(--cp-pink) !important; }
+.cm-attribute      { color: var(--cp-yellow) !important; }
 
 .cm-heading        { color: var(--cp-mauve) !important; font-weight: bold !important; }
 .cm-strong         { color: var(--cp-maroon) !important; font-weight: bold !important; }

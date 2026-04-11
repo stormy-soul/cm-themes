@@ -130,17 +130,18 @@ del .cm-deletedText, del .cm-changedText { background: transparent !important !i
 
 /* Syntax */
 .cm-keyword, .cm-controlKeyword, .cm-moduleKeyword { color: var(--an-base05) !important; font-weight: bold; }
-.cm-variableName  { color: var(--an-base06) !important; }
-.cm-propertyName  { color: var(--an-base06) !important; }
+.cm-variable      { color: var(--an-base06) !important; }
+.cm-variable-2    { color: var(--an-base06) !important; }
+.cm-property      { color: var(--an-base06) !important; }
 .cm-name          { color: var(--an-base06) !important; }
-.cm-typeName      { color: var(--an-base07) !important; }
-.cm-className     { color: var(--an-base07) !important; font-style: italic; }
+.cm-type          { color: var(--an-base07) !important; }
+.cm-class         { color: var(--an-base07) !important; font-style: italic; }
 .cm-namespace     { color: var(--an-base0E) !important; font-style: italic; }
 .cm-operator      { color: var(--an-base0D) !important; }
 .cm-bracket, .cm-brace, .cm-punctuation,
 .cm-squareBracket, .cm-angleBracket { color: var(--an-base0D) !important; }
-.cm-function      { color: var(--an-base07) !important; }
-.cm-labelName     { color: var(--an-base07) !important; }
+.cm-deffunc       { color: var(--an-base07) !important; }
+.cm-label         { color: var(--an-base07) !important; }
 .cm-number        { color: var(--an-base09) !important; }
 .cm-atom, .cm-bool, .cm-self, .cm-constant { color: var(--an-base09) !important; }
 .cm-modifier      { color: var(--an-base0F) !important; font-style: italic; }
@@ -149,8 +150,8 @@ del .cm-deletedText, del .cm-changedText { background: transparent !important !i
 .cm-inserted      { color: var(--an-base08) !important; }
 .cm-comment, .cm-docComment { color: var(--an-base0A) !important; font-style: italic; }
 .cm-meta          { color: var(--an-base0A) !important; }
-.cm-tagName       { color: var(--an-base0C) !important; }
-.cm-attributeName { color: var(--an-base0F) !important; }
+.cm-tag           { color: var(--an-base0C) !important; }
+.cm-attribute     { color: var(--an-base0F) !important; }
 .cm-heading       { color: var(--an-base0B) !important; font-weight: bold; }
 .cm-strong        { color: var(--an-base09) !important; font-weight: bold; }
 .cm-emphasis      { color: var(--an-base0E) !important; font-style: italic; }

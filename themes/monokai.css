@@ -91,15 +91,15 @@ del .cm-deletedText, del .cm-changedText { background: transparent !important !i
 
 /* Syntax */
 .cm-keyword, .cm-controlKeyword, .cm-moduleKeyword { color: var(--mk-base04) !important; font-weight: bold; }
-.cm-variableName, .cm-name { color: var(--mk-base05) !important; }
-.cm-propertyName  { color: var(--mk-base09) !important; }
-.cm-typeName      { color: var(--mk-base06) !important; font-style: italic; }
-.cm-className     { color: var(--mk-base09) !important; font-style: italic; }
+.cm-variable, .cm-variable-2, .cm-name { color: var(--mk-base05) !important; }
+.cm-property      { color: var(--mk-base09) !important; }
+.cm-type          { color: var(--mk-base06) !important; font-style: italic; }
+.cm-class         { color: var(--mk-base09) !important; font-style: italic; }
 .cm-namespace     { color: var(--mk-base05) !important; font-style: italic; }
 .cm-operator      { color: var(--mk-base04) !important; }
 .cm-bracket, .cm-brace, .cm-punctuation,
 .cm-squareBracket, .cm-angleBracket { color: var(--mk-base01) !important; }
-.cm-function, .cm-labelName { color: var(--mk-base06) !important; }
+.cm-deffunc, .cm-label { color: var(--mk-base06) !important; }
 .cm-number        { color: var(--mk-base08) !important; }
 .cm-atom, .cm-bool, .cm-self, .cm-constant { color: var(--mk-base08) !important; }
 .cm-modifier      { color: var(--mk-base08) !important; font-style: italic; }
@@ -108,8 +108,8 @@ del .cm-deletedText, del .cm-changedText { background: transparent !important !i
 .cm-inserted      { color: var(--mk-base09) !important; }
 .cm-comment, .cm-docComment { color: var(--mk-base02) !important; font-style: italic; }
 .cm-meta          { color: var(--mk-base02) !important; }
-.cm-tagName       { color: var(--mk-base04) !important; }
-.cm-attributeName { color: var(--mk-base09) !important; }
+.cm-tag           { color: var(--mk-base04) !important; }
+.cm-attribute     { color: var(--mk-base09) !important; }
 .cm-heading       { color: var(--mk-base09) !important; font-weight: bold; }
 .cm-strong        { color: var(--mk-base05) !important; font-weight: bold; }
 .cm-emphasis      { color: var(--mk-base05) !important; font-style: italic; }

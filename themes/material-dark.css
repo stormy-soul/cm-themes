@@ -256,12 +256,13 @@ del .cm-changedText {
 .cm-controlKeyword,
 .cm-moduleKeyword         { color: var(--md-base08) !important; font-weight: bold !important; }
 
-.cm-variableName           { color: var(--md-base11) !important; }
-.cm-propertyName           { color: var(--md-base0F) !important; }
+.cm-variable               { color: var(--md-base11) !important; }
+.cm-variable-2             { color: var(--md-base11) !important; }
+.cm-property               { color: var(--md-base0F) !important; }
 .cm-name                   { color: var(--md-base0E) !important; }
 
-.cm-typeName               { color: var(--md-base08) !important; }
-.cm-className              { color: var(--md-base0B) !important; font-style: italic !important; }
+.cm-type                   { color: var(--md-base08) !important; }
+.cm-class                  { color: var(--md-base0B) !important; font-style: italic !important; }
 .cm-namespace              { color: var(--md-base0E) !important; font-style: italic !important; }
 
 .cm-operator               { color: var(--md-base05) !important; }
@@ -271,8 +272,8 @@ del .cm-changedText {
 .cm-squareBracket,
 .cm-angleBracket           { color: var(--md-base03) !important; }
 
-.cm-function               { color: var(--md-base0D) !important; }
-.cm-labelName              { color: var(--md-base0D) !important; font-style: italic !important; }
+.cm-deffunc                { color: var(--md-base0D) !important; }
+.cm-label                  { color: var(--md-base0D) !important; font-style: italic !important; }
 
 .cm-number                 { color: var(--md-base0B) !important; }
 .cm-atom,
@@ -289,8 +290,8 @@ del .cm-changedText {
 .cm-docComment             { color: var(--md-base03) !important; font-style: italic !important; }
 .cm-meta                   { color: var(--md-base03) !important; }
 
-.cm-tagName                { color: var(--md-base0F) !important; }
-.cm-attributeName          { color: var(--md-base0B) !important; }
+.cm-tag                    { color: var(--md-base0F) !important; }
+.cm-attribute          { color: var(--md-base0B) !important; }
 
 .cm-heading                { color: var(--md-base12) !important; font-weight: bold !important; }
 .cm-heading1               { color: var(--md-base0B) !important; font-weight: bold !important; }
