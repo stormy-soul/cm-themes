@@ -140,7 +140,7 @@ del .cm-deletedText, del .cm-changedText { background: transparent !important !i
 .cm-operator      { color: var(--an-base0D) !important; }
 .cm-bracket, .cm-brace, .cm-punctuation,
 .cm-squareBracket, .cm-angleBracket { color: var(--an-base0D) !important; }
-.cm-deffunc       { color: var(--an-base07) !important; }
+*.cm-deffunc       { color: var(--an-base07) !important; }
 .cm-label         { color: var(--an-base07) !important; }
 .cm-number        { color: var(--an-base09) !important; }
 .cm-atom, .cm-bool, .cm-self, .cm-constant { color: var(--an-base09) !important; }
