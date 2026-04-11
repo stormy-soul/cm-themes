@@ -3,51 +3,51 @@
 
 /* ── Variables ───────────────────────────────────────────────────────────── */
 :root {
-    --cp-base00: #1e1e2e !important;
-    --cp-base01: #313244 !important;
-    --cp-base02: #45475a !important;
-    --cp-base03: #585b70 !important;
-    --cp-base04: #cdd6f4 !important;
-    --cp-base05: #f5e0dc !important;
-    --cp-dark:   #181825 !important;
+    --base00: #1e1e2e !important;
+    --base01: #313244 !important;
+    --base02: #45475a !important;
+    --base03: #585b70 !important;
+    --base04: #cdd6f4 !important;
+    --base05: #f5e0dc !important;
+    --dark:   #181825 !important;
 
-    --cp-rosewater: #f5e0dc !important;
-    --cp-flamingo:  #f2cdcd !important;
-    --cp-pink:      #f5c2e7 !important;
-    --cp-mauve:     #cba6f7 !important;
-    --cp-red:       #f38ba8 !important;
-    --cp-maroon:    #eba0ac !important;
-    --cp-peach:     #fab387 !important;
-    --cp-yellow:    #f9e2af !important;
-    --cp-green:     #a6e3a1 !important;
-    --cp-teal:      #94e2d5 !important;
-    --cp-sky:       #89dceb !important;
-    --cp-sapphire:  #74c7ec !important;
-    --cp-blue:      #89b4fa !important;
-    --cp-lavender:  #b4befe !important;
+    --rosewater: #f5e0dc !important;
+    --flamingo:  #f2cdcd !important;
+    --pink:      #f5c2e7 !important;
+    --mauve:     #cba6f7 !important;
+    --red:       #f38ba8 !important;
+    --maroon:    #eba0ac !important;
+    --peach:     #fab387 !important;
+    --yellow:    #f9e2af !important;
+    --green:     #a6e3a1 !important;
+    --teal:      #94e2d5 !important;
+    --sky:       #89dceb !important;
+    --sapphire:  #74c7ec !important;
+    --blue:      #89b4fa !important;
+    --lavender:  #b4befe !important;
 
-    --cp-sel-match:  #45475a80 !important;
-    --cp-added-bg:   #a6e3a140 !important;
-    --cp-removed-bg: #f38ba840 !important;
+    --sel-match:  #45475a80 !important;
+    --added-bg:   #a6e3a140 !important;
+    --removed-bg: #f38ba840 !important;
 }
 
 /* ── Base editor ─────────────────────────────────────────────────────────── */
 .cm-editor {
-    color: var(--cp-base04) !important;
-    background-color: var(--cp-base00) !important;
+    color: var(--base04) !important;
+    background-color: var(--base00) !important;
 }
 
-.cm-content { caret-color: var(--cp-rosewater) !important; }
+.cm-content { caret-color: var(--rosewater) !important; }
 
 .cm-cursor,
 .cm-dropCursor {
-    border-left-color: var(--cp-rosewater) !important;
+    border-left-color: var(--rosewater) !important;
     border-left-width: 2px !important;
 }
 
 .cm-fat-cursor {
     background-color: #f5e0dc99 !important;
-    color: var(--cp-base00) !important;
+    color: var(--base00) !important;
 }
 
 /* ── Selection ───────────────────────────────────────────────────────────── */
@@ -55,7 +55,7 @@
 .cm-selectionBackground,
 .cm-content ::selection {
     background-color: #585b7080 !important;
-    outline: 1px solid var(--cp-mauve) !important;
+    outline: 1px solid var(--mauve) !important;
 }
 
 .cm-selectionLayer { z-index: 100 !important; }
@@ -63,67 +63,67 @@
 /* ── Search ──────────────────────────────────────────────────────────────── */
 .cm-searchMatch {
     background-color: #89b4fa40 !important;
-    outline: 1px solid var(--cp-sapphire) !important;
-    color: var(--cp-base04) !important;
+    outline: 1px solid var(--sapphire) !important;
+    color: var(--base04) !important;
     border-radius: 3px !important;
 }
 
-.cm-searchMatch span { color: var(--cp-base04) !important; }
+.cm-searchMatch span { color: var(--base04) !important; }
 
 .cm-searchMatch.cm-searchMatch-selected {
-    background-color: var(--cp-blue) !important;
-    color: var(--cp-base00) !important;
+    background-color: var(--blue) !important;
+    color: var(--base00) !important;
 }
 
-.cm-searchMatch.cm-searchMatch-selected span { color: var(--cp-base00) !important; }
+.cm-searchMatch.cm-searchMatch-selected span { color: var(--base00) !important; }
 
 /* ── Panels ──────────────────────────────────────────────────────────────── */
 .cm-panels {
-    background-color: var(--cp-dark) !important;
-    color: var(--cp-base04) !important;
+    background-color: var(--dark) !important;
+    color: var(--base04) !important;
     border-radius: 4px !important;
 }
 
-.cm-panels.cm-panels-top    { border-bottom: 1px solid var(--cp-base02) !important; }
-.cm-panels.cm-panels-bottom { border-top:    1px solid var(--cp-base02) !important; }
+.cm-panels.cm-panels-top    { border-bottom: 1px solid var(--base02) !important; }
+.cm-panels.cm-panels-bottom { border-top:    1px solid var(--base02) !important; }
 
 .cm-panel button {
-    background-color: var(--cp-base01) !important;
-    color: var(--cp-base04) !important;
+    background-color: var(--base01) !important;
+    color: var(--base04) !important;
     border-radius: 3px !important;
 }
 
-.cm-panel button:hover { background-color: var(--cp-base01) !important; }
+.cm-panel button:hover { background-color: var(--base01) !important; }
 
 /* ── Active line ─────────────────────────────────────────────────────────── */
 .cm-activeLine {
     background-color: #3a3a5266 !important;
-    border-left: 2px solid var(--cp-lavender) !important;
+    border-left: 2px solid var(--lavender) !important;
     border-radius: 2px !important;
     z-index: 1 !important;
 }
 
 /* ── Gutters ─────────────────────────────────────────────────────────────── */
 .cm-gutters {
-    background-color: var(--cp-dark) !important;
-    color: var(--cp-base02) !important;
-    border-right: 1px solid var(--cp-base01) !important;
+    background-color: var(--dark) !important;
+    color: var(--base02) !important;
+    border-right: 1px solid var(--base01) !important;
 }
 
 .cm-activeLineGutter {
-    background-color: var(--cp-base01) !important;
-    color: var(--cp-base04) !important;
+    background-color: var(--base01) !important;
+    color: var(--base04) !important;
     font-weight: bold !important;
 }
 
-.cm-foldGutter .cm-gutterElement       { color: var(--cp-base02) !important; cursor: pointer !important; }
-.cm-foldGutter .cm-gutterElement:hover { color: var(--cp-base04) !important; }
+.cm-foldGutter .cm-gutterElement       { color: var(--base02) !important; cursor: pointer !important; }
+.cm-foldGutter .cm-gutterElement:hover { color: var(--base04) !important; }
 
 /* ── Diff / merge ────────────────────────────────────────────────────────── */
 .cm-insertedLine,
 ins.cm-insertedLine {
-    background-color: var(--cp-added-bg) !important !important;
-    color: var(--cp-green) !important;
+    background-color: var(--added-bg) !important !important;
+    color: var(--green) !important;
     border: 1px solid #a6e3a140 !important;
     border-radius: 2px !important;
 }
@@ -133,8 +133,8 @@ ins.cm-insertedLine .cm-changedText { background: transparent !important !import
 .cm-deletedLine,
 del,
 del.cm-deletedLine {
-    background-color: var(--cp-removed-bg) !important !important;
-    color: var(--cp-red) !important;
+    background-color: var(--removed-bg) !important !important;
+    color: var(--red) !important;
     border: 1px solid #f38ba840 !important;
     border-radius: 2px !important;
 }
@@ -144,48 +144,48 @@ del .cm-changedText { background: transparent !important !important; }
 
 /* ── Tooltips / autocomplete ─────────────────────────────────────────────── */
 .cm-tooltip {
-    background-color: var(--cp-base01) !important;
-    border: 1px solid var(--cp-base02) !important;
+    background-color: var(--base01) !important;
+    border: 1px solid var(--base02) !important;
     border-radius: 4px !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3) !important;
 }
 
-.cm-tooltip-autocomplete > ul                     { background-color: var(--cp-base01) !important; }
-.cm-tooltip-autocomplete > ul > li[aria-selected] { background-color: var(--cp-base01) !important; color: var(--cp-base05) !important; border-radius: 3px !important; }
+.cm-tooltip-autocomplete > ul                     { background-color: var(--base01) !important; }
+.cm-tooltip-autocomplete > ul > li[aria-selected] { background-color: var(--base01) !important; color: var(--cp-base05) !important; border-radius: 3px !important; }
 .cm-tooltip-autocomplete > ul > li > span.cm-completionIcon,
-.cm-tooltip-autocomplete > ul > li > span.cm-completionDetail { color: var(--cp-base02) !important; }
+.cm-tooltip-autocomplete > ul > li > span.cm-completionDetail { color: var(--base02) !important; }
 .cm-tooltip-autocomplete > ul > li > span.cm-completionDetail { font-style: italic !important; }
 
 /* ── Diagnostics ─────────────────────────────────────────────────────────── */
-.cm-diagnostic-error   { border-left: 3px solid var(--cp-red) !important; }
-.cm-diagnostic-warning { border-left: 3px solid var(--cp-yellow) !important; }
-.cm-diagnostic-info    { border-left: 3px solid var(--cp-blue) !important; }
-.cm-lintPoint-error    { border-bottom: 2px wavy var(--cp-red) !important; }
-.cm-lintPoint-warning  { border-bottom: 2px wavy var(--cp-yellow) !important; }
+.cm-diagnostic-error   { border-left: 3px solid var(--red) !important; }
+.cm-diagnostic-warning { border-left: 3px solid var(--yellow) !important; }
+.cm-diagnostic-info    { border-left: 3px solid var(--blue) !important; }
+.cm-lintPoint-error    { border-bottom: 2px wavy var(--red) !important; }
+.cm-lintPoint-warning  { border-bottom: 2px wavy var(--yellow) !important; }
 
 /* ── Brackets ────────────────────────────────────────────────────────────── */
 .cm-matchingBracket {
     background-color: #45475a55 !important;
-    outline: 1px solid var(--cp-lavender) !important;
+    outline: 1px solid var(--lavender) !important;
     border-radius: 2px !important;
 }
 
 .cm-nonmatchingBracket {
     background-color: #f38ba840 !important;
-    outline: 1px solid var(--cp-red) !important;
+    outline: 1px solid var(--red) !important;
     border-radius: 2px !important;
 }
 
 .cm-selectionMatch {
-    background-color: var(--cp-sel-match) !important;
+    background-color: var(--sel-match) !important;
     outline: 1px solid #31324450 !important;
     border-radius: 2px !important;
 }
 
 /* ── Fold placeholder ────────────────────────────────────────────────────── */
 .cm-foldPlaceholder {
-    background-color: var(--cp-base01) !important;
-    color: var(--cp-base02) !important;
+    background-color: var(--base01) !important;
+    color: var(--base02) !important;
     border: 1px dotted #45475a70 !important;
     border-radius: 3px !important;
     padding: 0 4px !important;
@@ -195,89 +195,89 @@ del .cm-changedText { background: transparent !important !important; }
 /* ── Focus ───────────────────────────────────────────────────────────────── */
 .cm-editor.cm-focused {
     outline: none !important;
-    box-shadow: 0 0 0 2px var(--cp-base00), 0 0 0 3px #b4befe40 !important;
+    box-shadow: 0 0 0 2px var(--base00), 0 0 0 3px #b4befe40 !important;
 }
 
 /* ── Scrollbars ──────────────────────────────────────────────────────────── */
 .cm-scroller::-webkit-scrollbar       { width: 8px !important; height: 8px !important; }
-.cm-scroller::-webkit-scrollbar-track { background: var(--cp-dark) !important; }
+.cm-scroller::-webkit-scrollbar-track { background: var(--dark) !important; }
 .cm-scroller::-webkit-scrollbar-thumb {
-    background-color: var(--cp-base01) !important;
+    background-color: var(--base01) !important;
     border-radius: 4px !important;
-    border: 3px solid var(--cp-dark) !important;
+    border: 3px solid var(--dark) !important;
 }
-.cm-scroller::-webkit-scrollbar-thumb:hover { background-color: var(--cp-base02) !important; }
+.cm-scroller::-webkit-scrollbar-thumb:hover { background-color: var(--base02) !important; }
 
 /* ── Ghost text ──────────────────────────────────────────────────────────── */
-.cm-ghostText { opacity: 0.5 !important; color: var(--cp-base02) !important; }
+.cm-ghostText { opacity: 0.5 !important; color: var(--base02) !important; }
 
 /* ── Syntax highlighting ─────────────────────────────────────────────────── */
 .cm-keyword,
 .cm-controlKeyword,
-.cm-moduleKeyword  { color: var(--cp-mauve) !important; font-weight: bold !important; }
+.cm-moduleKeyword  { color: var(--mauve) !important; font-weight: bold !important; }
 
-.cm-variable       { color: var(--cp-base04) !important; }
-.cm-variable-2     { color: var(--cp-base04) !important; }
-.cm-property       { color: var(--cp-blue) !important; }
-.cm-name           { color: var(--cp-base04) !important; }
+.cm-variable       { color: var(--base04) !important; }
+.cm-variable-2     { color: var(--base04) !important; }
+.cm-property       { color: var(--blue) !important; }
+.cm-name           { color: var(--base04) !important; }
 
-.cm-type           { color: var(--cp-yellow) !important; }
-.cm-class          { color: var(--cp-yellow) !important; font-style: italic !important; }
-.cm-namespace      { color: var(--cp-peach) !important;  font-style: italic !important; }
+.cm-type           { color: var(--yellow) !important; }
+.cm-class          { color: var(--yellow) !important; font-style: italic !important; }
+.cm-namespace      { color: var(--peach) !important;  font-style: italic !important; }
 
-.cm-operator       { color: var(--cp-sky) !important; }
+.cm-operator       { color: var(--sky) !important; }
 .cm-bracket,
 .cm-punctuation,
-.cm-squareBracket  { color: var(--cp-base03) !important; }
-.cm-brace          { color: var(--cp-teal) !important; }
-.cm-angleBracket   { color: var(--cp-sky) !important; }
+.cm-squareBracket  { color: var(--base03) !important; }
+.cm-brace          { color: var(--teal) !important; }
+.cm-angleBracket   { color: var(--sky) !important; }
 
-.cm-deffunc        { color: var(--cp-blue) !important; }
-.cm-label          { color: var(--cp-blue) !important; }
+.cm-deffunc        { color: var(--blue) !important; }
+.cm-label          { color: var(--blue) !important; }
 
-.cm-number         { color: var(--cp-peach) !important; }
+.cm-number         { color: var(--peach) !important; }
 .cm-atom,
-.cm-bool           { color: var(--cp-peach) !important; }
-.cm-self           { color: var(--cp-red) !important; }
-.cm-modifier       { color: var(--cp-mauve) !important; font-style: italic !important; }
-.cm-constant       { color: var(--cp-peach) !important; }
+.cm-bool           { color: var(--peach) !important; }
+.cm-self           { color: var(--red) !important; }
+.cm-modifier       { color: var(--mauve) !important; font-style: italic !important; }
+.cm-constant       { color: var(--peach) !important; }
 
-.cm-string         { color: var(--cp-green) !important; }
-.cm-regexp         { color: var(--cp-pink) !important; }
-.cm-inserted       { color: var(--cp-green) !important; }
+.cm-string         { color: var(--green) !important; }
+.cm-regexp         { color: var(--pink) !important; }
+.cm-inserted       { color: var(--green) !important; }
 
 .cm-comment,
-.cm-docComment     { color: var(--cp-base02) !important; font-style: italic !important; }
-.cm-meta           { color: var(--cp-base02) !important; }
+.cm-docComment     { color: var(--base02) !important; font-style: italic !important; }
+.cm-meta           { color: var(--base02) !important; }
 
-.cm-tag            { color: var(--cp-pink) !important; }
-.cm-attribute      { color: var(--cp-yellow) !important; }
+.cm-tag            { color: var(--pink) !important; }
+.cm-attribute      { color: var(--yellow) !important; }
 
-.cm-heading        { color: var(--cp-mauve) !important; font-weight: bold !important; }
-.cm-strong         { color: var(--cp-maroon) !important; font-weight: bold !important; }
-.cm-emphasis       { color: var(--cp-pink) !important; font-style: italic !important; }
+.cm-heading        { color: var(--mauve) !important; font-weight: bold !important; }
+.cm-strong         { color: var(--maroon) !important; font-weight: bold !important; }
+.cm-emphasis       { color: var(--pink) !important; font-style: italic !important; }
 
 .cm-link {
-    color: var(--cp-mauve) !important;
+    color: var(--mauve) !important;
     font-weight: 500 !important;
     text-decoration: underline !important;
     text-underline-position: under !important;
 }
 
 .cm-url {
-    color: var(--cp-blue) !important;
+    color: var(--blue) !important;
     text-decoration: underline !important;
     text-underline-offset: 2px !important;
 }
 
 .cm-invalid {
-    color: var(--cp-red) !important;
+    color: var(--red) !important;
     text-decoration: underline wavy !important;
-    border-bottom: 1px wavy var(--cp-red) !important;
+    border-bottom: 1px wavy var(--red) !important;
 }
 
-.cm-strikethrough    { color: var(--cp-red) !important; text-decoration: line-through !important; }
-.cm-deleted          { color: var(--cp-red) !important; }
-.cm-quote            { color: var(--cp-lavender) !important; }
-.cm-monospace        { color: var(--cp-teal) !important; font-style: italic !important; }
-.cm-contentSeparator { color: var(--cp-sapphire) !important; }
+.cm-strikethrough    { color: var(--red) !important; text-decoration: line-through !important; }
+.cm-deleted          { color: var(--red) !important; }
+.cm-quote            { color: var(--lavender) !important; }
+.cm-monospace        { color: var(--teal) !important; font-style: italic !important; }
+.cm-contentSeparator { color: var(--sapphire) !important; }
