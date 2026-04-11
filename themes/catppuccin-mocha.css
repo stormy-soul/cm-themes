@@ -3,27 +3,27 @@
 
 /* ── Variables ───────────────────────────────────────────────────────────── */
 :root {
-    --base00: #1e1e2e !important;
-    --base01: #313244 !important;
-    --base02: #45475a !important;
-    --base03: #585b70 !important;
-    --base04: #cdd6f4 !important;
-    --base05: #cba6f7 !important;
-    --base06: #cdd6f4 !important;
-    --base07: #f9e2af !important;
-    --base08: #a6e3a1 !important;
-    --base09: #fab387 !important;
-    --base0A: #45475a !important;
-    --base0B: #cba6f7 !important;
-    --base0C: #f5c2e7 !important;
-    --base0D: #89dceb !important;
-    --base0E: #fab387 !important;
-    --base0F: #cba6f7 !important;
-    --invalid: #f38ba8 !important;
-    --dark: #181825 !important;
-    --sel: #45475a80 !important;
-    --added: #a6e3a140 !important;
-    --removed: #f38ba840 !important;
+    --base00: #1e1e2e;
+    --base01: #313244;
+    --base02: #45475a;
+    --base03: #585b70;
+    --base04: #cdd6f4;
+    --base05: #cba6f7;
+    --base06: #cdd6f4;
+    --base07: #f9e2af;
+    --base08: #a6e3a1;
+    --base09: #fab387;
+    --base0A: #45475a;
+    --base0B: #cba6f7;
+    --base0C: #f5c2e7;
+    --base0D: #89dceb;
+    --base0E: #fab387;
+    --base0F: #cba6f7;
+    --invalid: #f38ba8;
+    --dark: #181825;
+    --sel: #45475a80;
+    --added: #a6e3a140;
+    --removed: #f38ba840;
 }
 
 /* ── Base editor ─────────────────────────────────────────────────────────── */

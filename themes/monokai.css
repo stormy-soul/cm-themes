@@ -2,28 +2,28 @@
 /* Converted from fsegurai/codemirror-themes */
 
 :root {
-    --base00: #272822 !important;
-    --base01: #f8f8f2 !important;
-    --base02: #88846f !important;
-    --base03: #f8f8f0 !important;
-    --base04: #F92672 !important;
-    --base05: #F92672 !important;
-    --base06: #FD971F !important;
-    --base07: #66D9EF !important;
-    --base08: #E6DB74 !important;
-    --base09: #AE81FF !important;
-    --base0A: #88846f !important;
-    --base0B: #A6E22E !important;
-    --base0C: #F92672 !important;
-    --base0D: #F92672 !important;
-    --base0E: #FD971F !important;
-    --base0F: #AE81FF !important;
-    --invalid: #F44747 !important;
-    --dark: #414339 !important;
-    --tooltip: #34352f !important;
-    --sel: #49483E !important;
-    --added: #3d4d3880 !important;
-    --removed: #4d393980 !important;
+    --base00: #272822;
+    --base01: #f8f8f2;
+    --base02: #88846f;
+    --base03: #f8f8f0;
+    --base04: #F92672;
+    --base05: #F92672;
+    --base06: #FD971F;
+    --base07: #66D9EF;
+    --base08: #E6DB74;
+    --base09: #AE81FF;
+    --base0A: #88846f;
+    --base0B: #A6E22E;
+    --base0C: #F92672;
+    --base0D: #F92672;
+    --base0E: #FD971F;
+    --base0F: #AE81FF;
+    --invalid: #F44747;
+    --dark: #414339;
+    --tooltip: #34352f;
+    --sel: #49483E;
+    --added: #3d4d3880;
+    --removed: #4d393980;
 }
 
 .cm-editor {

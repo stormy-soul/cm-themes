@@ -2,27 +2,27 @@
 /* Converted from fsegurai/codemirror-themes */
 
 :root {
-    --base00: #292D3E !important;
-    --base01: #A6ACCD !important;
-    --base02: #444267 !important;
-    --base03: #676E95 !important;
-    --base04: #BFC7D5 !important;
-    --base05: #82AAFF !important;
-    --base06: #A6ACCD !important;
-    --base07: #C792EA !important;
-    --base08: #C3E88D !important;
-    --base09: #F78C6C !important;
-    --base0A: #676E95 !important;
-    --base0B: #FFCB6B !important;
-    --base0C: #FF5370 !important;
-    --base0D: #89DDFF !important;
-    --base0E: #FFCB6B !important;
-    --base0F: #BB80B3 !important;
-    --invalid: #FF5370 !important;
-    --dark: #202331 !important;
-    --tooltip: #343A50 !important;
-    --added: #2c3c2e80 !important;
-    --removed: #3e2e3180 !important;
+    --base00: #292D3E;
+    --base01: #A6ACCD;
+    --base02: #444267;
+    --base03: #676E95;
+    --base04: #BFC7D5;
+    --base05: #82AAFF;
+    --base06: #A6ACCD;
+    --base07: #C792EA;
+    --base08: #C3E88D;
+    --base09: #F78C6C;
+    --base0A: #676E95;
+    --base0B: #FFCB6B;
+    --base0C: #FF5370;
+    --base0D: #89DDFF;
+    --base0E: #FFCB6B;
+    --base0F: #BB80B3;
+    --invalid: #FF5370;
+    --dark: #202331;
+    --tooltip: #343A50;
+    --added: #2c3c2e80;
+    --removed: #3e2e3180;
 }
 
 .cm-editor {

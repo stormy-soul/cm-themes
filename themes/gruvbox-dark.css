@@ -2,26 +2,26 @@
 /* Converted from fsegurai/codemirror-themes */
 
 :root {
-    --base00: #282828 !important;
-    --base01: #3c3836 !important;
-    --base02: #504945 !important;
-    --base03: #665c54 !important;
-    --base04: #7c6f64 !important;
-    --base05: #fb4934 !important;
-    --base06: #83a598 !important;
-    --base07: #8ec07c !important;
-    --base08: #b8bb26 !important;
-    --base09: #d3869b !important;
-    --base0A: #928374 !important;
-    --base0B: #fabd2f !important;
-    --base0C: #fb4934 !important;
-    --base0D: #ebdbb2 !important;
-    --base0E: #83a598 !important;
-    --base0F: #d3869b !important;
-    --invalid: #ebdbb2 !important;
-    --dark: #928374 !important;
-    --added: #32361a80 !important;
-    --removed: #3c1f1e80 !important;
+    --base00: #282828;
+    --base01: #3c3836;
+    --base02: #504945;
+    --base03: #665c54;
+    --base04: #7c6f64;
+    --base05: #fb4934;
+    --base06: #83a598;
+    --base07: #8ec07c;
+    --base08: #b8bb26;
+    --base09: #d3869b;
+    --base0A: #928374;
+    --base0B: #fabd2f;
+    --base0C: #fb4934;
+    --base0D: #ebdbb2;
+    --base0E: #83a598;
+    --base0F: #d3869b;
+    --invalid: #ebdbb2;
+    --dark: #928374;
+    --added: #32361a80;
+    --removed: #3c1f1e80;
 }
 
 .cm-editor {
